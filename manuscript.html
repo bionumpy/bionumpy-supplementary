@@ -52,8 +52,8 @@
   <meta name="dc.date" content="2023-12-06" />
   <meta name="citation_publication_date" content="2023-12-06" />
   <meta property="article:published_time" content="2023-12-06" />
-  <meta name="dc.modified" content="2023-12-06T17:46:16+00:00" />
-  <meta property="article:modified_time" content="2023-12-06T17:46:16+00:00" />
+  <meta name="dc.modified" content="2023-12-06T17:53:28+00:00" />
+  <meta property="article:modified_time" content="2023-12-06T17:53:28+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -66,9 +66,9 @@
   <meta name="citation_fulltext_html_url" content="https://bionumpy.github.io/bionumpy-supplementary/" />
   <meta name="citation_pdf_url" content="https://bionumpy.github.io/bionumpy-supplementary/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://bionumpy.github.io/bionumpy-supplementary/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://bionumpy.github.io/bionumpy-supplementary/v/c94c96249744bc6c2426b0412faa6566481eee4e/" />
-  <meta name="manubot_html_url_versioned" content="https://bionumpy.github.io/bionumpy-supplementary/v/c94c96249744bc6c2426b0412faa6566481eee4e/" />
-  <meta name="manubot_pdf_url_versioned" content="https://bionumpy.github.io/bionumpy-supplementary/v/c94c96249744bc6c2426b0412faa6566481eee4e/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://bionumpy.github.io/bionumpy-supplementary/v/0efb57652d3bbc58a509026ca6f49a51004b6c59/" />
+  <meta name="manubot_html_url_versioned" content="https://bionumpy.github.io/bionumpy-supplementary/v/0efb57652d3bbc58a509026ca6f49a51004b6c59/" />
+  <meta name="manubot_pdf_url_versioned" content="https://bionumpy.github.io/bionumpy-supplementary/v/0efb57652d3bbc58a509026ca6f49a51004b6c59/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -83,9 +83,8 @@
 <header id="title-block-header">
 <h1 class="title">Supplementary material for: Array programming for Biology</h1>
 </header>
-<h1 id="supplementary-material">Supplementary Material</h1>
 <h2 id="benchmarks">Benchmarks</h2>
-<p>We compare the speed of BioNumPy against other existing Python packages and commonly used non-Python tools on a set of typical bioinformatics tasks. As seen in Figure 1, we find that BioNumPy is generally considerably faster than vanilla Python solutions, as well as the commonly used Python packages BioPython and Biotite, which mostly rely on Python for-loops to perform operations on datasets. On problems where designated efficient bioinformatics tools are widely used (intersection of BED-files, kmer counting and VCF operations), we find that BioNumPy is close to, or as efficient as, tools written in C/C++ (BEDTools <span class="citation" data-cites="hv9Btixa">[<a href="#ref-hv9Btixa" role="doc-biblioref">1</a>]</span>, Jellyfish <span class="citation" data-cites="14dfsRv4c">[<a href="#ref-14dfsRv4c" role="doc-biblioref">2</a>]</span> and BCFTools <span class="citation" data-cites="bcftools">[<a href="#ref-bcftools" role="doc-biblioref"><strong>bcftools?</strong></a>]</span>). A Snakemake pipeline for reproducing the results can be found at <a href="https://github.com/bionumpy/bionumpy/tree/master/benchmarks" class="uri">https://github.com/bionumpy/bionumpy/tree/master/benchmarks</a>, along with an open invitation to expand the benchmark with additional tools and cases.</p>
+<p>We compare the speed of BioNumPy against other existing Python packages and commonly used non-Python tools on a set of typical bioinformatics tasks. As seen in Figure <a href="#fig:benchmarks">1</a>, we find that BioNumPy is generally considerably faster than vanilla Python solutions, as well as the commonly used Python packages BioPython and Biotite, which mostly rely on Python for-loops to perform operations on datasets. On problems where designated efficient bioinformatics tools are widely used (intersection of BED-files, kmer counting and VCF operations), we find that BioNumPy is close to, or as efficient as, tools written in C/C++ (BEDTools <span class="citation" data-cites="1HWiAHnIw">[<a href="#ref-1HWiAHnIw" role="doc-biblioref">1</a>]</span>, Jellyfish <span class="citation" data-cites="14dfsRv4c">[<a href="#ref-14dfsRv4c" role="doc-biblioref">2</a>]</span> and BCFTools <span class="citation" data-cites="eyOvxHVn">[<a href="#ref-eyOvxHVn" role="doc-biblioref">3</a>]</span>). A Snakemake pipeline for reproducing the results can be found at <a href="https://github.com/bionumpy/bionumpy/tree/master/benchmarks" class="uri">https://github.com/bionumpy/bionumpy/tree/master/benchmarks</a>, along with an open invitation to expand the benchmark with additional tools and cases.</p>
 <div id="fig:benchmarks" class="fignos">
 <figure>
 <img src="images/benchmarks.png" alt="Figure 1: Benchmarking BioNumPy against other tools and methods on various typical bioinformatics tasks." />
@@ -94,7 +93,7 @@
 </div>
 <h2 id="reproducing-a-machine-learning-benchmark-using-bionumpy">Reproducing a machine learning benchmark using BioNumPy</h2>
 <p>TODO</p>
-<p>To show how BioNumPy can be used to easily process and parse various biology data formats, we used BioNumPy to reproduce a recently published benchmark of a machine learning method <span class="citation" data-cites="sasse">[<a href="#ref-sasse" role="doc-biblioref"><strong>sasse?</strong></a>]</span>. In the original work, the authors are using a combination of custom Python code and common bioinformatics tools (such as BCFTools <span class="citation" data-cites="bcftools">[<a href="#ref-bcftools" role="doc-biblioref"><strong>bcftools?</strong></a>]</span>) to extract sequences around the transcription start sites of genes. We have forked the original repository and replaced all this code, which consisted of X lines of Python code and X lines of shell scripts, with only a few calls to BioNumPy (in total Y lines).</p>
+<p>To show how BioNumPy can be used to easily process and parse various biology data formats, we used BioNumPy to reproduce a recently published benchmark of a machine learning method <span class="citation" data-cites="sasse">[<a href="#ref-sasse" role="doc-biblioref"><strong>sasse?</strong></a>]</span>. In the original work, the authors are using a combination of custom Python code and common bioinformatics tools (such as BCFTools <span class="citation" data-cites="eyOvxHVn">[<a href="#ref-eyOvxHVn" role="doc-biblioref">3</a>]</span>) to extract sequences around the transcription start sites of genes. We have forked the original repository and replaced all this code, which consisted of X lines of Python code and X lines of shell scripts, with only a few calls to BioNumPy (in total Y lines).</p>
 <p>Our fork is available at <a href="https://…." class="uri">https://….</a> We believe this shows that BioNumPy quite easily can be used to cleanly integrate various biology file formats.</p>
 <h2 id="bionumpy-implementation-details">BioNumPy Implementation details</h2>
 <p>BioNumPy internally stores sequence data (e.g. nucleotides or amino acids) as numeric values, allowing the use of standard NumPy arrays for data representation and processing. A key way BioNumpy achieves high performance is by storing multiple data entries in shared NumPy arrays. To illustrate the benefit of this approach, consider the example where we want to count the number of Gs and Cs in a large set of DNA sequences. Existing Python packages like BioPython and Biotite, do this by iterating over the sequences using Python for-loops, which is slow when the number of sequences is large. BioNumPy, however, stores all sequences in only one or a few shared NumPy arrays (Figure 3a), meaning that vectorized NumPy operations can be used to do the counting in a fraction of the time.</p>
@@ -105,18 +104,21 @@
 <figcaption aria-hidden="true"><span>Figure 2:</span> <strong>Overview of the RaggedArray and EncodedRaggedArray data structures</strong>. A RaggedArray is similar to a NumPy array/matrix but can represent a matrix consisting of rows with varying lengths (a). This makes it able to represent data with varying lengths efficiently in a shared data structure. A RaggedArray supports many of the same operations as NumPy arrays, such as indexing (b), vectorization (c) and reduction (d). An EncodedRaggedArray is a RaggedArray that supports storing and operating on non-numeric data (e.g. DNA sequences) by encoding the data and keeping track of the encoding (e). An EncodedRaggedArray supports the same operations as RaggedArrays (f). This figure is an adopted and modified version of Figure 1 in :cite:<code>numpy</code> and is licensed under a Creative Commons Attribution 4.0 International License (<a href="http://creativecommons.org/licenses/by/4.0/" class="uri">http://creativecommons.org/licenses/by/4.0/</a>).</figcaption>
 </figure>
 </div>
-<p>BioNumPy has been developed following the principles of continuous integration and distribution. The codebase is thoroughly and automatically tested through an extensive collection of unit tests, application tests, integration tests and property-based tests <span class="citation" data-cites="hypothesis">[<a href="#ref-hypothesis" role="doc-biblioref"><strong>hypothesis?</strong></a>]</span>. New code changes are automatically benchmarked and tested before being automatically published, ensuring that updates can be frequent while high code quality is maintained. This workflow makes it safe and easy to allow contributions from new contributors, which is important for longevity and community adoption of the package.</p>
-<p> 10.1093/bioinformatics/btq033<br />
-<span class="citation" data-cites="bcftools">[<a href="#ref-bcftools" role="doc-biblioref"><strong>bcftools?</strong></a>]</span>: doi:10.1093/gigascience/giab008
-<span class="citation" data-cites="hypothesis">[<a href="#ref-hypothesis" role="doc-biblioref"><strong>hypothesis?</strong></a>]</span>: doi:10.21105/joss.01891</p>
+<p>BioNumPy has been developed following the principles of continuous integration and distribution. The codebase is thoroughly and automatically tested through an extensive collection of unit tests, application tests, integration tests and property-based tests <span class="citation" data-cites="8ghcYs9i">[<a href="#ref-8ghcYs9i" role="doc-biblioref">4</a>]</span>. New code changes are automatically benchmarked and tested before being automatically published, ensuring that updates can be frequent while high code quality is maintained. This workflow makes it safe and easy to allow contributions from new contributors, which is important for longevity and community adoption of the package.</p>
 <h2 class="page_break_before" id="references">References</h2>
 <!-- Explicitly insert bibliography here -->
 <div id="refs" class="references csl-bib-body" role="doc-bibliography">
-<div id="ref-hv9Btixa" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">1. </div><div class="csl-right-inline"><strong>Home Page</strong> <a href="https://doi.org/">https://doi.org/</a></div>
+<div id="ref-1HWiAHnIw" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">1. </div><div class="csl-right-inline"><strong>BEDTools: a flexible suite of utilities for comparing genomic features</strong> <div class="csl-block">Aaron R Quinlan, Ira M Hall</div> <em>Bioinformatics</em> (2010-01-28) <a href="https://doi.org/cmrms3">https://doi.org/cmrms3</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1093/bioinformatics/btq033">10.1093/bioinformatics/btq033</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/20110278">20110278</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2832824">PMC2832824</a></div></div>
 </div>
 <div id="ref-14dfsRv4c" class="csl-entry" role="doc-biblioentry">
 <div class="csl-left-margin">2. </div><div class="csl-right-inline"><strong>A fast, lock-free approach for efficient parallel counting of occurrences of &lt;i&gt;k&lt;/i&gt;-mers</strong> <div class="csl-block">Guillaume Marçais, Carl Kingsford</div> <em>Bioinformatics</em> (2011-01-07) <a href="https://doi.org/b7gkd6">https://doi.org/b7gkd6</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1093/bioinformatics/btr011">10.1093/bioinformatics/btr011</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/21217122">21217122</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3051319">PMC3051319</a></div></div>
+</div>
+<div id="ref-eyOvxHVn" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">3. </div><div class="csl-right-inline"><strong>Twelve years of SAMtools and BCFtools</strong> <div class="csl-block">Petr Danecek, James K Bonfield, Jennifer Liddle, John Marshall, Valeriu Ohan, Martin O Pollard, Andrew Whitwham, Thomas Keane, Shane A McCarthy, Robert M Davies, Heng Li</div> <em>GigaScience</em> (2021-01-29) <a href="https://doi.org/gjxzc9">https://doi.org/gjxzc9</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1093/gigascience/giab008">10.1093/gigascience/giab008</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/33590861">33590861</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7931819">PMC7931819</a></div></div>
+</div>
+<div id="ref-8ghcYs9i" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">4. </div><div class="csl-right-inline"><strong>Hypothesis: A new approach to property-based testing</strong> <div class="csl-block">David MacIver, Zac Hatfield-Dodds, Many Contributors</div> <em>Journal of Open Source Software</em> (2019-11-21) <a href="https://doi.org/gs757j">https://doi.org/gs757j</a> <div class="csl-block">DOI: <a href="https://doi.org/10.21105/joss.01891">10.21105/joss.01891</a></div></div>
 </div>
 </div>
 <!-- default theme -->

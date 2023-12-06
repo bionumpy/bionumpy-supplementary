@@ -21,8 +21,8 @@ header-includes: |
   <meta name="dc.date" content="2023-12-06" />
   <meta name="citation_publication_date" content="2023-12-06" />
   <meta property="article:published_time" content="2023-12-06" />
-  <meta name="dc.modified" content="2023-12-06T17:46:16+00:00" />
-  <meta property="article:modified_time" content="2023-12-06T17:46:16+00:00" />
+  <meta name="dc.modified" content="2023-12-06T17:53:28+00:00" />
+  <meta property="article:modified_time" content="2023-12-06T17:53:28+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -35,9 +35,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://bionumpy.github.io/bionumpy-supplementary/" />
   <meta name="citation_pdf_url" content="https://bionumpy.github.io/bionumpy-supplementary/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://bionumpy.github.io/bionumpy-supplementary/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://bionumpy.github.io/bionumpy-supplementary/v/c94c96249744bc6c2426b0412faa6566481eee4e/" />
-  <meta name="manubot_html_url_versioned" content="https://bionumpy.github.io/bionumpy-supplementary/v/c94c96249744bc6c2426b0412faa6566481eee4e/" />
-  <meta name="manubot_pdf_url_versioned" content="https://bionumpy.github.io/bionumpy-supplementary/v/c94c96249744bc6c2426b0412faa6566481eee4e/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://bionumpy.github.io/bionumpy-supplementary/v/0efb57652d3bbc58a509026ca6f49a51004b6c59/" />
+  <meta name="manubot_html_url_versioned" content="https://bionumpy.github.io/bionumpy-supplementary/v/0efb57652d3bbc58a509026ca6f49a51004b6c59/" />
+  <meta name="manubot_pdf_url_versioned" content="https://bionumpy.github.io/bionumpy-supplementary/v/0efb57652d3bbc58a509026ca6f49a51004b6c59/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -63,14 +63,11 @@ manubot-clear-requests-cache: false
 
 
 
-Supplementary Material
-======================================
-
 
 Benchmarks
 ---------------------
 
-We compare the speed of BioNumPy against other existing Python packages and commonly used non-Python tools on a set of typical bioinformatics tasks. As seen in Figure 1, we find that BioNumPy is generally considerably faster than vanilla Python solutions, as well as the commonly used Python packages BioPython and Biotite, which mostly rely on Python for-loops to perform operations on datasets. On problems where designated efficient bioinformatics tools are widely used (intersection of BED-files, kmer counting and VCF operations), we find that BioNumPy is close to, or as efficient as, tools written in C/C++ (BEDTools [@bedtools], Jellyfish [@jellyfish] and BCFTools [@bcftools]). A Snakemake pipeline for reproducing the results can be found at <https://github.com/bionumpy/bionumpy/tree/master/benchmarks>, along with an open invitation to expand the benchmark with additional tools and cases.
+We compare the speed of BioNumPy against other existing Python packages and commonly used non-Python tools on a set of typical bioinformatics tasks. As seen in Figure @fig:benchmarks, we find that BioNumPy is generally considerably faster than vanilla Python solutions, as well as the commonly used Python packages BioPython and Biotite, which mostly rely on Python for-loops to perform operations on datasets. On problems where designated efficient bioinformatics tools are widely used (intersection of BED-files, kmer counting and VCF operations), we find that BioNumPy is close to, or as efficient as, tools written in C/C++ (BEDTools [@bedtools], Jellyfish [@jellyfish] and BCFTools [@bcftools]). A Snakemake pipeline for reproducing the results can be found at <https://github.com/bionumpy/bionumpy/tree/master/benchmarks>, along with an open invitation to expand the benchmark with additional tools and cases.
 
 ![**Benchmarking BioNumPy against other tools and methods on various typical bioinformatics tasks.**](images/benchmarks.png){#fig:benchmarks}
  
@@ -95,14 +92,11 @@ Storing multiple elements in shared arrays is trivial if the elements all have t
 
 
 
-
-
 BioNumPy has been developed following the principles of continuous integration and distribution. The codebase is thoroughly and automatically tested through an extensive collection of unit tests, application tests, integration tests and property-based tests [@hypothesis]. New code changes are automatically benchmarked and tested before being automatically published, ensuring that updates can be frequent while high code quality is maintained. This workflow makes it safe and easy to allow contributions from new contributors, which is important for longevity and community adoption of the package.
 
 
-
 [@jellyfish]: doi:10.1093/bioinformatics/btr011
-[@bedtools]: doi: 10.1093/bioinformatics/btq033  
+[@bedtools]: doi:10.1093/bioinformatics/btq033
 [@bcftools]: doi:10.1093/gigascience/giab008
 [@hypothesis]: doi:10.21105/joss.01891
 
