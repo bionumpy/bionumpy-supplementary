@@ -2,5 +2,6 @@ input_id	dealiased_id	standard_id	short_id
 bedtools	doi:10.1093/bioinformatics/btq033	doi:10.1093/bioinformatics/btq033	1HWiAHnIw
 jellyfish	doi:10.1093/bioinformatics/btr011	doi:10.1093/bioinformatics/btr011	14dfsRv4c
 bcftools	doi:10.1093/gigascience/giab008	doi:10.1093/gigascience/giab008	eyOvxHVn
-sasse	sasse	sasse	z5nlq7H6
+sasse	doi:10.1038/s41588-023-01524-6	doi:10.1038/s41588-023-01524-6	16cFkJ3Sc
+numpy	numpy	numpy	pE8TIkc2
 hypothesis	doi:10.21105/joss.01891	doi:10.21105/joss.01891	8ghcYs9i

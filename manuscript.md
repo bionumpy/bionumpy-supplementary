@@ -21,8 +21,8 @@ header-includes: |
   <meta name="dc.date" content="2023-12-07" />
   <meta name="citation_publication_date" content="2023-12-07" />
   <meta property="article:published_time" content="2023-12-07" />
-  <meta name="dc.modified" content="2023-12-07T13:29:06+00:00" />
-  <meta property="article:modified_time" content="2023-12-07T13:29:06+00:00" />
+  <meta name="dc.modified" content="2023-12-07T14:10:56+00:00" />
+  <meta property="article:modified_time" content="2023-12-07T14:10:56+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -35,9 +35,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://bionumpy.github.io/bionumpy-supplementary/" />
   <meta name="citation_pdf_url" content="https://bionumpy.github.io/bionumpy-supplementary/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://bionumpy.github.io/bionumpy-supplementary/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://bionumpy.github.io/bionumpy-supplementary/v/dbfed4f55c045932c384f9638a78d6415f163a24/" />
-  <meta name="manubot_html_url_versioned" content="https://bionumpy.github.io/bionumpy-supplementary/v/dbfed4f55c045932c384f9638a78d6415f163a24/" />
-  <meta name="manubot_pdf_url_versioned" content="https://bionumpy.github.io/bionumpy-supplementary/v/dbfed4f55c045932c384f9638a78d6415f163a24/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://bionumpy.github.io/bionumpy-supplementary/v/72d881ba4c20c9c8007891aa190ccb5368cc47ed/" />
+  <meta name="manubot_html_url_versioned" content="https://bionumpy.github.io/bionumpy-supplementary/v/72d881ba4c20c9c8007891aa190ccb5368cc47ed/" />
+  <meta name="manubot_pdf_url_versioned" content="https://bionumpy.github.io/bionumpy-supplementary/v/72d881ba4c20c9c8007891aa190ccb5368cc47ed/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -63,7 +63,6 @@ manubot-clear-requests-cache: false
 
 
 
-
 Benchmarks
 ---------------------
 
@@ -73,11 +72,9 @@ We compare the speed of BioNumPy against other existing Python packages and comm
  
 Reproducing a machine learning benchmark using BioNumPy
 ------------------------------------------------------------------------------------
-TODO
+To show how BioNumPy can be used to easily process and parse various biology data formats, we used BioNumPy to reproduce a recently published benchmark of a machine learning method [@sasse]. In the original work, the authors are using a combination of custom Python code and common bioinformatics tools (such as BCFTools [@bcftools]) to extract sequences around the transcription start sites of genes, which are used as input to a machine learning method. We have forked the original repository and replaced all this code, which consisted of X lines of Python code and X lines of shell scripts, with only a few calls to BioNumPy (in total Y lines). 
 
-To show how BioNumPy can be used to easily process and parse various biology data formats, we used BioNumPy to reproduce a recently published benchmark of a machine learning method [@sasse]. In the original work, the authors are using a combination of custom Python code and common bioinformatics tools (such as BCFTools [@bcftools]) to extract sequences around the transcription start sites of genes. We have forked the original repository and replaced all this code, which consisted of X lines of Python code and X lines of shell scripts, with only a few calls to BioNumPy (in total Y lines). 
-
-Our fork is available at <https://….> We believe this shows that BioNumPy quite easily can be used to cleanly integrate various biology file formats.
+Our fork is available at <https://github.com/knutdrand/enformer_assesment_reproduction> We believe this shows that BioNumPy quite easily can be used to cleanly integrate various biology file formats.
 
 BioNumPy Implementation details
 ----------------------------------------------------
@@ -87,8 +84,10 @@ BioNumPy internally stores sequence data (e.g. nucleotides or amino acids) as nu
 Storing multiple elements in shared arrays is trivial if the elements all have the same size, since a matrix representation can be used. However, for biological data, it is common that data elements vary in size. For instance, sequences in FASTA files are rarely all of the exact same size. BioNumPy uses the RaggedArray data structure from the npstructures package (<https://github.com/bionumpy/npstructures>, developed in tandem with BioNumPy) to tackle this problem (Figure @fig:ragged_array). The RaggedArray can be seen as a matrix where rows can have different lengths. The npstructures RaggedArray implementation is compatible with most common NumPy operations, like indexing (Figure @fig:ragged_array b), vectorized operations (Figure @fig:ragged_array c), and reductions (Figure @fig:ragged_array d). As far as possible, objects in BioNumPy follow the array interoperability protocols defined by NumPy (<https://numpy.org/doc/stable/user/basics.interoperability.html>)
 
 
-![ **Overview of the RaggedArray and EncodedRaggedArray data structures**. A RaggedArray is similar to a NumPy array/matrix but can represent a matrix consisting of rows with varying lengths (a). This makes it able to represent data with varying lengths efficiently in a shared data structure. A RaggedArray supports many of the same operations as NumPy arrays, such as indexing (b), vectorization (c) and reduction (d). An EncodedRaggedArray is a RaggedArray that supports storing and operating on non-numeric data (e.g. DNA sequences) by encoding the data and keeping track of the encoding (e). An EncodedRaggedArray supports the same operations as RaggedArrays (f). This figure is an adopted and modified version of  Figure 1 in :cite:`numpy` and is licensed under a Creative Commons Attribution 4.0 International License (<http://creativecommons.org/licenses/by/4.0/>).
+![ **Overview of the RaggedArray and EncodedRaggedArray data structures**. A RaggedArray is similar to a NumPy array/matrix but can represent a matrix consisting of rows with varying lengths (a). This makes it able to represent data with varying lengths efficiently in a shared data structure. A RaggedArray supports many of the same operations as NumPy arrays, such as indexing (b), vectorization (c) and reduction (d). An EncodedRaggedArray is a RaggedArray that supports storing and operating on non-numeric data (e.g. DNA sequences) by encoding the data and keeping track of the encoding (e). An EncodedRaggedArray supports the same operations as RaggedArrays (f). This figure is an adopted and modified version of  Figure 1 in [@numpy] and is licensed under a Creative Commons Attribution 4.0 International License (<http://creativecommons.org/licenses/by/4.0/>).
 ](images/ragged_array_figure.png){#fig:ragged_array}
+
+
 
 
 
@@ -99,6 +98,7 @@ BioNumPy has been developed following the principles of continuous integration a
 [@bedtools]: doi:10.1093/bioinformatics/btq033
 [@bcftools]: doi:10.1093/gigascience/giab008
 [@hypothesis]: doi:10.21105/joss.01891
+[@sasse]: doi:10.1038/s41588-023-01524-6
 
 
 ## References {.page_break_before}
