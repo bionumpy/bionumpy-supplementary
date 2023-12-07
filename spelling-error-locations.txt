@@ -25,7 +25,14 @@ content/01.abstract.md:10:bioinformatics
 content/01.abstract.md:10:BioNumPy
 content/01.abstract.md:10:BioNumPy
 content/01.abstract.md:10:BioNumPy
-content/01.abstract.md:12:BioNumPy
+content/01.abstract.md:10:BioNumPy
+content/01.abstract.md:10:datasets
+content/01.abstract.md:10:FASTA
+content/01.abstract.md:10:GTF
+content/01.abstract.md:10:preprocess
+content/01.abstract.md:10:preprocessing
+content/01.abstract.md:10:runnable
+content/01.abstract.md:10:VCF
 content/01.abstract.md:14:BioNumPy
 content/01.abstract.md:17:BioNumpy
 content/01.abstract.md:17:BioNumPy
@@ -67,6 +74,7 @@ content/01.abstract.md:22:vectorization
 content/01.abstract.md:29:benchmarked
 content/01.abstract.md:29:BioNumPy
 content/01.abstract.md:29:codebase
+content/01.abstract.md:31:numpy
 content/01.abstract.md:32:bioinformatics
 content/01.abstract.md:33:bedtools
 content/01.abstract.md:33:bioinformatics

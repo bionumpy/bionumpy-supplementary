@@ -10,11 +10,15 @@ codebase
 datasets
 EncodedRaggedArray
 FASTA
+GTF
 kmer
 npstructures
 NumPy
+preprocess
+preprocessing
 RaggedArray
 RaggedArrays
+runnable
 Snakemake
 VCF
 vectorization
