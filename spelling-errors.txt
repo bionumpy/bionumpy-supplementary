@@ -10,8 +10,12 @@ codebase
 datasets
 EncodedRaggedArray
 FASTA
+genomic
 GTF
+installable
 kmer
+modularizable
+modularization
 npstructures
 NumPy
 preprocess

@@ -5,7 +5,7 @@ keywords:
 - publishing
 - manubot
 lang: en-US
-date-meta: '2023-12-07'
+date-meta: '2024-01-16'
 author-meta: []
 header-includes: |
   <!--
@@ -18,11 +18,11 @@ header-includes: |
   <meta name="citation_title" content="Supplementary material for: Array programming for Biology" />
   <meta property="og:title" content="Supplementary material for: Array programming for Biology" />
   <meta property="twitter:title" content="Supplementary material for: Array programming for Biology" />
-  <meta name="dc.date" content="2023-12-07" />
-  <meta name="citation_publication_date" content="2023-12-07" />
-  <meta property="article:published_time" content="2023-12-07" />
-  <meta name="dc.modified" content="2023-12-07T14:28:48+00:00" />
-  <meta property="article:modified_time" content="2023-12-07T14:28:48+00:00" />
+  <meta name="dc.date" content="2024-01-16" />
+  <meta name="citation_publication_date" content="2024-01-16" />
+  <meta property="article:published_time" content="2024-01-16" />
+  <meta name="dc.modified" content="2024-01-16T12:49:41+00:00" />
+  <meta property="article:modified_time" content="2024-01-16T12:49:41+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -35,9 +35,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://bionumpy.github.io/bionumpy-supplementary/" />
   <meta name="citation_pdf_url" content="https://bionumpy.github.io/bionumpy-supplementary/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://bionumpy.github.io/bionumpy-supplementary/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://bionumpy.github.io/bionumpy-supplementary/v/8cc9cb76365daca63068df4b5b8a95254729c612/" />
-  <meta name="manubot_html_url_versioned" content="https://bionumpy.github.io/bionumpy-supplementary/v/8cc9cb76365daca63068df4b5b8a95254729c612/" />
-  <meta name="manubot_pdf_url_versioned" content="https://bionumpy.github.io/bionumpy-supplementary/v/8cc9cb76365daca63068df4b5b8a95254729c612/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://bionumpy.github.io/bionumpy-supplementary/v/8b18c12952fea3698ebb53cb1e2d816136eee531/" />
+  <meta name="manubot_html_url_versioned" content="https://bionumpy.github.io/bionumpy-supplementary/v/8b18c12952fea3698ebb53cb1e2d816136eee531/" />
+  <meta name="manubot_pdf_url_versioned" content="https://bionumpy.github.io/bionumpy-supplementary/v/8b18c12952fea3698ebb53cb1e2d816136eee531/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -72,7 +72,11 @@ We compare the speed of BioNumPy against other existing Python packages and comm
  
 Reproducing a machine learning benchmark using BioNumPy
 ------------------------------------------------------------------------------------
-To show how BioNumPy can be used to easily process and parse various biology data formats, we used BioNumPy to reproduce a recently published benchmark of a machine learning method [@sasse]. In the original work, the authors are using a combination of custom Python code and common bioinformatics tools (such as BCFTools [@bcftools]) to extract sequences around the transcription start sites of genes, which are used as input to a machine learning method. This preprocessing step takes as input various file formats (GTF, FASTA, VCF). Due to the external dependencies and combination of scripts that needs to be manually run and tied together, the current code is not runnable and the results are not directly reproducible. We have forked the original repository and replaced all this code with a single, readable Python script that uses BioNumPy to preprocess and combine the various data files. We believe this shows that BioNumPy can be used to easily and cleanly integrate various biological datasets where it before was common to use a combination of scripts and tools, that easily leads to non-reproducible code.
+To show how BioNumPy can be used to easily process and parse various biology data formats, we used BioNumPy to reproduce a recently published benchmark of a machine learning method [@sasse]. In the original work, the authors are using a combination of custom Python code and common bioinformatics tools (such as BCFTools [@bcftools]) to extract sequences around the transcription start sites of genes, which are used as input to a machine learning method. This preprocessing step takes as input various file formats (GTF, FASTA, VCF). Due to the external dependencies and combination of scripts that need to be manually run and tied together, the current code is not runnable and the results are not directly reproducible. 
+
+We have forked the original repository and replaced all this code with a single, readable Python script that uses BioNumPy to preprocess and combine the various data files. We believe this shows that BioNumPy can be used to easily and cleanly integrate various biological datasets where it before was common to use a combination of scripts and tools, which easily leads to non-reproducible code. 
+
+In addition to being reproducible, the BioNumPy code enables several advantages. The code is reusable for other settings. It is straightforward to run the Python script with another set of genes, or another window size. It is relatively easy to adapt the script to be more robust. Some transcription start site windows might fall outside of the chromosome boundaries or include ‘N’s, both of which would break the current code. However, it is straightforward to handle this in the single  Python script. Lastly, it is possible to try different variations of the script to see if it improves the performance. For instance, the current scripts return all the sequences on the forward strand, but it might be better to return the reverse complement for genes that are on the negative strand. Lastly, one can use the full range of modularization in Python. From functions and classes to modules and published packages installable by PiP. This makes it easier to reuse the code in other similar projects.  In conclusion, BioNumPy enables efficient scripts for handling genomic data that are reproducible, reusable, adaptable, and modularizable. 
 
 Our fork is available at <https://github.com/knutdrand/enformer_assesment_reproduction>.
 
