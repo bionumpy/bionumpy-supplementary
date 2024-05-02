@@ -5,7 +5,7 @@ keywords:
 - publishing
 - manubot
 lang: en-US
-date-meta: '2024-01-16'
+date-meta: '2024-05-02'
 author-meta: []
 header-includes: |
   <!--
@@ -18,11 +18,11 @@ header-includes: |
   <meta name="citation_title" content="Supplementary material for: Array programming for Biology" />
   <meta property="og:title" content="Supplementary material for: Array programming for Biology" />
   <meta property="twitter:title" content="Supplementary material for: Array programming for Biology" />
-  <meta name="dc.date" content="2024-01-16" />
-  <meta name="citation_publication_date" content="2024-01-16" />
-  <meta property="article:published_time" content="2024-01-16" />
-  <meta name="dc.modified" content="2024-01-16T12:49:41+00:00" />
-  <meta property="article:modified_time" content="2024-01-16T12:49:41+00:00" />
+  <meta name="dc.date" content="2024-05-02" />
+  <meta name="citation_publication_date" content="2024-05-02" />
+  <meta property="article:published_time" content="2024-05-02" />
+  <meta name="dc.modified" content="2024-05-02T11:49:00+00:00" />
+  <meta property="article:modified_time" content="2024-05-02T11:49:00+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -35,9 +35,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://bionumpy.github.io/bionumpy-supplementary/" />
   <meta name="citation_pdf_url" content="https://bionumpy.github.io/bionumpy-supplementary/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://bionumpy.github.io/bionumpy-supplementary/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://bionumpy.github.io/bionumpy-supplementary/v/8b18c12952fea3698ebb53cb1e2d816136eee531/" />
-  <meta name="manubot_html_url_versioned" content="https://bionumpy.github.io/bionumpy-supplementary/v/8b18c12952fea3698ebb53cb1e2d816136eee531/" />
-  <meta name="manubot_pdf_url_versioned" content="https://bionumpy.github.io/bionumpy-supplementary/v/8b18c12952fea3698ebb53cb1e2d816136eee531/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://bionumpy.github.io/bionumpy-supplementary/v/078c15c634ad703732d03426dda5e2f8db213b16/" />
+  <meta name="manubot_html_url_versioned" content="https://bionumpy.github.io/bionumpy-supplementary/v/078c15c634ad703732d03426dda5e2f8db213b16/" />
+  <meta name="manubot_pdf_url_versioned" content="https://bionumpy.github.io/bionumpy-supplementary/v/078c15c634ad703732d03426dda5e2f8db213b16/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
