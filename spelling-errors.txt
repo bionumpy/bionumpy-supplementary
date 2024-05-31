@@ -18,7 +18,6 @@ modularizable
 modularization
 npstructures
 NumPy
-png
 preprocess
 preprocessing
 RaggedArray

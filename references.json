@@ -1,146 +1,136 @@
 [
   {
-    "id": "1LexfAxj",
-    "type": "article-journal",
-    "abstract": "Array programming provides a powerful, compact and expressive syntax for accessing, manipulating and operating on data in vectors, matrices and higher-dimensional arrays. NumPy is the primary array programming library for the Python language. It has an essential role in research analysis pipelines in fields as diverse as physics, chemistry, astronomy, geoscience, biology, psychology, materials science, engineering, finance and economics. For example, in astronomy, NumPy was an important part of the software stack used in the discovery of gravitational waves1 and in the first imaging of a black hole2. Here we review how a few fundamental array concepts lead to a simple and powerful programming paradigm for organizing, exploring and analysing scientific data. NumPy is the foundation upon which the scientific Python ecosystem is constructed. It is so pervasive that several projects, targeting audiences with specialized needs, have developed their own NumPy-like interfaces and array objects. Owing to its central position in the ecosystem, NumPy increasingly acts as an interoperability layer between such array computation libraries and, together with its application programming interface (API), provides a flexible framework to support the next decade of scientific and industrial analysis.",
-    "container-title": "Nature",
-    "DOI": "10.1038/s41586-020-2649-2",
-    "ISSN": "1476-4687",
+    "publisher": "Springer Science and Business Media LLC",
     "issue": "7825",
-    "language": "en",
+    "abstract": "<jats:title>Abstract</jats:title><jats:p>Array programming provides a powerful, compact and expressive syntax for accessing, manipulating and operating on data in vectors, matrices and higher-dimensional arrays. NumPy is the primary array programming library for the Python language. It has an essential role in research analysis pipelines in fields as diverse as physics, chemistry, astronomy, geoscience, biology, psychology, materials science, engineering, finance and economics. For example, in astronomy, NumPy was an important part of the software stack used in the discovery of gravitational waves<jats:sup>1</jats:sup>and in the first imaging of a black hole<jats:sup>2</jats:sup>. Here we review how a few fundamental array concepts lead to a simple and powerful programming paradigm for organizing, exploring and analysing scientific data. NumPy is the foundation upon which the scientific Python ecosystem is constructed. It is so pervasive that several projects, targeting audiences with specialized needs, have developed their own NumPy-like interfaces and array objects. Owing to its central position in the ecosystem, NumPy increasingly acts as an interoperability layer between such array computation libraries and, together with its application programming interface (API), provides a flexible framework to support the next decade of scientific and industrial analysis.</jats:p>",
+    "DOI": "10.1038/s41586-020-2649-2",
+    "type": "article-journal",
     "page": "357-362",
-    "source": "www.nature.com",
+    "source": "Crossref",
     "title": "Array programming with NumPy",
-    "URL": "https://doi.org/ghbzf2",
     "volume": "585",
     "author": [
       {
-        "family": "Harris",
-        "given": "Charles R."
+        "given": "Charles R.",
+        "family": "Harris"
       },
       {
-        "family": "Millman",
-        "given": "K. Jarrod"
+        "given": "K. Jarrod",
+        "family": "Millman"
       },
       {
-        "family": "Walt",
         "given": "Stéfan J.",
-        "non-dropping-particle": "van der"
+        "family": "van der Walt"
       },
       {
-        "family": "Gommers",
-        "given": "Ralf"
+        "given": "Ralf",
+        "family": "Gommers"
       },
       {
-        "family": "Virtanen",
-        "given": "Pauli"
+        "given": "Pauli",
+        "family": "Virtanen"
       },
       {
-        "family": "Cournapeau",
-        "given": "David"
+        "given": "David",
+        "family": "Cournapeau"
       },
       {
-        "family": "Wieser",
-        "given": "Eric"
+        "given": "Eric",
+        "family": "Wieser"
       },
       {
-        "family": "Taylor",
-        "given": "Julian"
+        "given": "Julian",
+        "family": "Taylor"
       },
       {
-        "family": "Berg",
-        "given": "Sebastian"
+        "given": "Sebastian",
+        "family": "Berg"
       },
       {
-        "family": "Smith",
-        "given": "Nathaniel J."
+        "given": "Nathaniel J.",
+        "family": "Smith"
       },
       {
-        "family": "Kern",
-        "given": "Robert"
+        "given": "Robert",
+        "family": "Kern"
       },
       {
-        "family": "Picus",
-        "given": "Matti"
+        "given": "Matti",
+        "family": "Picus"
       },
       {
-        "family": "Hoyer",
-        "given": "Stephan"
+        "given": "Stephan",
+        "family": "Hoyer"
       },
       {
-        "family": "Kerkwijk",
         "given": "Marten H.",
-        "non-dropping-particle": "van"
+        "family": "van Kerkwijk"
       },
       {
-        "family": "Brett",
-        "given": "Matthew"
+        "given": "Matthew",
+        "family": "Brett"
       },
       {
-        "family": "Haldane",
-        "given": "Allan"
+        "given": "Allan",
+        "family": "Haldane"
       },
       {
-        "family": "Río",
         "given": "Jaime Fernández",
-        "non-dropping-particle": "del"
+        "family": "del Río"
       },
       {
-        "family": "Wiebe",
-        "given": "Mark"
+        "given": "Mark",
+        "family": "Wiebe"
       },
       {
-        "family": "Peterson",
-        "given": "Pearu"
+        "given": "Pearu",
+        "family": "Peterson"
       },
       {
-        "family": "Gérard-Marchant",
-        "given": "Pierre"
+        "given": "Pierre",
+        "family": "Gérard-Marchant"
       },
       {
-        "family": "Sheppard",
-        "given": "Kevin"
+        "given": "Kevin",
+        "family": "Sheppard"
       },
       {
-        "family": "Reddy",
-        "given": "Tyler"
+        "given": "Tyler",
+        "family": "Reddy"
       },
       {
-        "family": "Weckesser",
-        "given": "Warren"
+        "given": "Warren",
+        "family": "Weckesser"
       },
       {
-        "family": "Abbasi",
-        "given": "Hameer"
+        "given": "Hameer",
+        "family": "Abbasi"
       },
       {
-        "family": "Gohlke",
-        "given": "Christoph"
+        "given": "Christoph",
+        "family": "Gohlke"
       },
       {
-        "family": "Oliphant",
-        "given": "Travis E."
+        "given": "Travis E.",
+        "family": "Oliphant"
       }
     ],
-    "accessed": {
-      "date-parts": [
-        [
-          "2024",
-          5,
-          31
-        ]
-      ]
-    },
+    "container-title": "Nature",
+    "language": "en",
     "issued": {
       "date-parts": [
         [
-          "2020",
-          9
+          2020,
+          9,
+          16
         ]
       ]
     },
+    "URL": "https://doi.org/ghbzf2",
+    "container-title-short": "Nature",
     "PMCID": "PMC7759461",
     "PMID": "32939066",
+    "id": "1LexfAxj",
     "note": "This CSL Item was generated by Manubot v0.5.6 from its persistent identifier (standard_id).\nstandard_id: doi:10.1038/s41586-020-2649-2"
   },
   {
