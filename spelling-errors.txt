@@ -3,7 +3,7 @@ BEDTools
 benchmarked
 Benchmarking
 bioinformatics
-BioNumPy
+BioNumpy
 BioPython
 Biotite
 codebase
@@ -18,12 +18,15 @@ modularizable
 modularization
 npstructures
 NumPy
+png
 preprocess
 preprocessing
 RaggedArray
 RaggedArrays
+reduceat
 runnable
 Snakemake
+ufunc
 VCF
 vectorization
 vectorized

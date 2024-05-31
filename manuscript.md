@@ -5,7 +5,7 @@ keywords:
 - publishing
 - manubot
 lang: en-US
-date-meta: '2024-05-02'
+date-meta: '2024-05-31'
 author-meta: []
 header-includes: |
   <!--
@@ -18,11 +18,11 @@ header-includes: |
   <meta name="citation_title" content="Supplementary material for: Array programming for Biology" />
   <meta property="og:title" content="Supplementary material for: Array programming for Biology" />
   <meta property="twitter:title" content="Supplementary material for: Array programming for Biology" />
-  <meta name="dc.date" content="2024-05-02" />
-  <meta name="citation_publication_date" content="2024-05-02" />
-  <meta property="article:published_time" content="2024-05-02" />
-  <meta name="dc.modified" content="2024-05-02T11:49:00+00:00" />
-  <meta property="article:modified_time" content="2024-05-02T11:49:00+00:00" />
+  <meta name="dc.date" content="2024-05-31" />
+  <meta name="citation_publication_date" content="2024-05-31" />
+  <meta property="article:published_time" content="2024-05-31" />
+  <meta name="dc.modified" content="2024-05-31T13:03:14+00:00" />
+  <meta property="article:modified_time" content="2024-05-31T13:03:14+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -35,9 +35,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://bionumpy.github.io/bionumpy-supplementary/" />
   <meta name="citation_pdf_url" content="https://bionumpy.github.io/bionumpy-supplementary/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://bionumpy.github.io/bionumpy-supplementary/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://bionumpy.github.io/bionumpy-supplementary/v/078c15c634ad703732d03426dda5e2f8db213b16/" />
-  <meta name="manubot_html_url_versioned" content="https://bionumpy.github.io/bionumpy-supplementary/v/078c15c634ad703732d03426dda5e2f8db213b16/" />
-  <meta name="manubot_pdf_url_versioned" content="https://bionumpy.github.io/bionumpy-supplementary/v/078c15c634ad703732d03426dda5e2f8db213b16/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://bionumpy.github.io/bionumpy-supplementary/v/275beba55c29e932fb0ce0e2d0084e39efdd9b8a/" />
+  <meta name="manubot_html_url_versioned" content="https://bionumpy.github.io/bionumpy-supplementary/v/275beba55c29e932fb0ce0e2d0084e39efdd9b8a/" />
+  <meta name="manubot_pdf_url_versioned" content="https://bionumpy.github.io/bionumpy-supplementary/v/275beba55c29e932fb0ce0e2d0084e39efdd9b8a/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -63,10 +63,12 @@ manubot-clear-requests-cache: false
 
 
 
+
+
 Benchmarks
 ---------------------
 
-We compare the speed of BioNumPy against other existing Python packages and commonly used non-Python tools on a set of typical bioinformatics tasks. As seen in Figure @fig:benchmarks, we find that BioNumPy is generally considerably faster than vanilla Python solutions, as well as the commonly used Python packages BioPython and Biotite, which mostly rely on Python for-loops to perform operations on datasets. On problems where designated efficient bioinformatics tools are widely used (intersection of BED-files, kmer counting and VCF operations), we find that BioNumPy is close to, or as efficient as, tools written in C/C++ (BEDTools [@bedtools], Jellyfish [@jellyfish] and BCFTools [@bcftools]). A Snakemake pipeline for reproducing the results can be found at <https://github.com/bionumpy/bionumpy/tree/master/benchmarks>, along with an open invitation to expand the benchmark with additional tools and cases.
+We compare the speed of BioNumPy against other existing Python packages and commonly used non-Python tools on a set of typical bioinformatics tasks. As seen in Figure @fig:benchmarks, we find that BioNumPy is generally considerably faster than vanilla Python solutions, as well as the commonly used Python packages BioPython and Biotite, which mostly rely on Python for-loops to perform operations on datasets. On problems where designated efficient bioinformatics tools are widely used (intersection of BED-files, kmer counting and VCF operations), we find that BioNumPy is close to, or as efficient as, tools written in C/C++ (BEDTools [@bedtools], Jellyfish [@jellyfish] and BCFTools [@bcftools]). A Snakemake pipeline for reproducing the results can be found at <https://github.com/bionumpy/bionumpy/tree/main/benchmarks>, along with an open invitation to expand the benchmark with additional tools and cases.
 
 ![**Benchmarking BioNumPy against other tools and methods on various typical bioinformatics tasks.**](images/benchmarks.png){#fig:benchmarks}
  
@@ -88,7 +90,9 @@ BioNumPy internally stores sequence data (e.g. nucleotides or amino acids) as nu
 Storing multiple elements in shared arrays is trivial if the elements all have the same size, since a matrix representation can be used. However, for biological data, it is common that data elements vary in size. For instance, sequences in FASTA files are rarely all of the exact same size. BioNumPy uses the RaggedArray data structure from the npstructures package (<https://github.com/bionumpy/npstructures>, developed in tandem with BioNumPy) to tackle this problem (Figure @fig:ragged_array). The RaggedArray can be seen as a matrix where rows can have different lengths. The npstructures RaggedArray implementation is compatible with most common NumPy operations, like indexing (Figure @fig:ragged_array b), vectorized operations (Figure @fig:ragged_array c), and reductions (Figure @fig:ragged_array d). As far as possible, objects in BioNumPy follow the array interoperability protocols defined by NumPy (<https://numpy.org/doc/stable/user/basics.interoperability.html>)
 
 
-![ **Overview of the RaggedArray and EncodedRaggedArray data structures**. A RaggedArray is similar to a NumPy array/matrix but can represent a matrix consisting of rows with varying lengths (a). This makes it able to represent data with varying lengths efficiently in a shared data structure. A RaggedArray supports many of the same operations as NumPy arrays, such as indexing (b), vectorization (c) and reduction (d). An EncodedRaggedArray is a RaggedArray that supports storing and operating on non-numeric data (e.g. DNA sequences) by encoding the data and keeping track of the encoding (e). An EncodedRaggedArray supports the same operations as RaggedArrays (f). This figure is an adopted and modified version of  Figure 1 in [@numpy] and is licensed under a Creative Commons Attribution 4.0 International License (<http://creativecommons.org/licenses/by/4.0/>).
+![ **Overview of the RaggedArray and EncodedRaggedArray data structures**. A RaggedArray is similar to a NumPy array/matrix but can represent a matrix consisting of rows with varying lengths (a). This makes it able to represent data with varying lengths efficiently in a shared data structure. A RaggedArray supports many of the same operations as NumPy arrays, such as indexing (b), vectorization (c) and reduction (d). <font color='darkorange'>These are implemented solely using NumPy, relying on functions like ufunc.accumulate, ufunc.reduceat and indexing. This means that most operations are close to equivalent operations on NumPy matrices, with a few exceptions like column reductions</font>. 
+
+An EncodedRaggedArray is a RaggedArray that supports storing and operating on non-numeric data (e.g. DNA sequences) by encoding the data and keeping track of the encoding (e). An EncodedRaggedArray supports the same operations as RaggedArrays (f). This figure is an adopted and modified version of  Figure 1 in [@numpy] and is licensed under a Creative Commons Attribution 4.0 International License (<http://creativecommons.org/licenses/by/4.0/>).
 ](images/ragged_array_figure.png){#fig:ragged_array}
 
 
@@ -103,6 +107,7 @@ BioNumPy has been developed following the principles of continuous integration a
 [@bcftools]: doi:10.1093/gigascience/giab008
 [@hypothesis]: doi:10.21105/joss.01891
 [@sasse]: doi:10.1038/s41588-023-01524-6
+
 
 
 ## References {.page_break_before}
