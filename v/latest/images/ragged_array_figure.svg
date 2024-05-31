@@ -523,14 +523,14 @@
      borderopacity="1.0"
      inkscape:pageopacity="1"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.9899495"
-     inkscape:cx="818.84022"
-     inkscape:cy="325.1706"
+     inkscape:zoom="11.2"
+     inkscape:cx="186.13673"
+     inkscape:cy="430.20067"
      inkscape:document-units="mm"
-     inkscape:current-layer="layer2"
+     inkscape:current-layer="layer1"
      showgrid="false"
      inkscape:window-width="2560"
-     inkscape:window-height="1378"
+     inkscape:window-height="1375"
      inkscape:window-x="0"
      inkscape:window-y="0"
      inkscape:window-maximized="1"
@@ -575,7 +575,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -3472,10 +3472,10 @@
          id="tspan7370"
          x="99.853249"
          y="60.322479"
-         style="font-size:1.41111112px;stroke-width:0.26458332">2 x 8 = 24 bytes </tspan><tspan
+         style="font-size:1.41111112px;stroke-width:0.26458332">2 x 8 = 16 bytes </tspan><tspan
          sodipodi:role="line"
          x="99.853249"
-         y="62.086365"
+         y="62.086369"
          style="font-size:1.41111112px;stroke-width:0.26458332"
          id="tspan7614">to jump one </tspan><tspan
          sodipodi:role="line"
@@ -4337,7 +4337,7 @@
            height="61.42857"
            x="344.64285"
            y="160.07452" /></flowRegion><flowPara
-         id="flowPara3012"></flowPara></flowRoot>    <rect
+         id="flowPara3012" /></flowRoot>    <rect
        style="fill:#d2e1f4;fill-opacity:1;stroke-width:0.26458332"
        id="rect1443-8"
        width="12.061435"
@@ -4995,7 +4995,7 @@
            height="19.642857"
            x="431.42856"
            y="199.18166" /></flowRegion><flowPara
-         id="flowPara3541"></flowPara></flowRoot>    <rect
+         id="flowPara3541" /></flowRoot>    <rect
        style="fill:#f2f2f2;fill-opacity:1;stroke:#000000;stroke-width:0.09752755;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:normal"
        id="rect1877-6"
        width="12.080465"
@@ -5108,7 +5108,7 @@
            height="38.392143"
            x="416.68738"
            y="335.25922" /></flowRegion><flowPara
-         id="flowPara4121"></flowPara></flowRoot>    <text
+         id="flowPara4121" /></flowRoot>    <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:2.11666656px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
        x="146.54907"
@@ -10062,7 +10062,7 @@
          id="tspan2829"
          x="178.03244"
          y="39.510513"
-         style="stroke-width:0.26458332"></tspan></text>
+         style="stroke-width:0.26458332" /></text>
     <rect
        style="opacity:1;fill:#ffffff;fill-opacity:0.68217055;stroke:none;stroke-width:0.07087235;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:normal"
        id="rect9770-9"
