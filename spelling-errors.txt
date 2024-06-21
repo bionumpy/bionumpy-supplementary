@@ -3,7 +3,7 @@ BEDTools
 benchmarked
 Benchmarking
 bioinformatics
-BioNumpy
+BioNumPy
 BioPython
 Biotite
 codebase

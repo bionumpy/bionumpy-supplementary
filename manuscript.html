@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="generator" content="pandoc" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
-  <meta name="dcterms.date" content="2024-05-31" />
+  <meta name="dcterms.date" content="2024-06-21" />
   <meta name="keywords" content="markdown, publishing, manubot" />
   <title>Supplementary material for: Array programming for Biology</title>
   <style>
@@ -49,11 +49,11 @@
   <meta name="citation_title" content="Supplementary material for: Array programming for Biology" />
   <meta property="og:title" content="Supplementary material for: Array programming for Biology" />
   <meta property="twitter:title" content="Supplementary material for: Array programming for Biology" />
-  <meta name="dc.date" content="2024-05-31" />
-  <meta name="citation_publication_date" content="2024-05-31" />
-  <meta property="article:published_time" content="2024-05-31" />
-  <meta name="dc.modified" content="2024-05-31T13:19:48+00:00" />
-  <meta property="article:modified_time" content="2024-05-31T13:19:48+00:00" />
+  <meta name="dc.date" content="2024-06-21" />
+  <meta name="citation_publication_date" content="2024-06-21" />
+  <meta property="article:published_time" content="2024-06-21" />
+  <meta name="dc.modified" content="2024-06-21T08:38:11+00:00" />
+  <meta property="article:modified_time" content="2024-06-21T08:38:11+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -66,9 +66,9 @@
   <meta name="citation_fulltext_html_url" content="https://bionumpy.github.io/bionumpy-supplementary/" />
   <meta name="citation_pdf_url" content="https://bionumpy.github.io/bionumpy-supplementary/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://bionumpy.github.io/bionumpy-supplementary/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://bionumpy.github.io/bionumpy-supplementary/v/f3a397ad3c99a8a54e58b49564a0b0abe1343d77/" />
-  <meta name="manubot_html_url_versioned" content="https://bionumpy.github.io/bionumpy-supplementary/v/f3a397ad3c99a8a54e58b49564a0b0abe1343d77/" />
-  <meta name="manubot_pdf_url_versioned" content="https://bionumpy.github.io/bionumpy-supplementary/v/f3a397ad3c99a8a54e58b49564a0b0abe1343d77/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://bionumpy.github.io/bionumpy-supplementary/v/c52cfae31480d1d437a31b1ca5c14fdc7cbbb7ec/" />
+  <meta name="manubot_html_url_versioned" content="https://bionumpy.github.io/bionumpy-supplementary/v/c52cfae31480d1d437a31b1ca5c14fdc7cbbb7ec/" />
+  <meta name="manubot_pdf_url_versioned" content="https://bionumpy.github.io/bionumpy-supplementary/v/c52cfae31480d1d437a31b1ca5c14fdc7cbbb7ec/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -102,7 +102,7 @@
 <div id="fig:ragged_array" class="fignos">
 <figure>
 <img src="images/ragged_array_figure.png" alt="Figure 2: Overview of the RaggedArray and EncodedRaggedArray data structures. A RaggedArray is similar to a NumPy array/matrix but can represent a matrix consisting of rows with varying lengths (a). This makes it able to represent data with varying lengths efficiently in a shared data structure. A RaggedArray supports many of the same operations as NumPy arrays, such as indexing (b), vectorization (c) and reduction (d). These are implemented solely using NumPy, relying on functions like ufunc.accumulate, ufunc.reduceat and indexing. This means that most operations are close to equivalent operations on NumPy matrices, with a few exceptions like column reductions. An EncodedRaggedArray is a RaggedArray that supports storing and operating on non-numeric data (e.g. DNA sequences) by encoding the data and keeping track of the encoding (e). An EncodedRaggedArray supports the same operations as RaggedArrays (f). This figure is an adopted and modified version of Figure 1 in [5] and is licensed under a Creative Commons Attribution 4.0 International License (http://creativecommons.org/licenses/by/4.0/)." />
-<figcaption aria-hidden="true"><span>Figure 2:</span> <strong>Overview of the RaggedArray and EncodedRaggedArray data structures</strong>. A RaggedArray is similar to a NumPy array/matrix but can represent a matrix consisting of rows with varying lengths (a). This makes it able to represent data with varying lengths efficiently in a shared data structure. A RaggedArray supports many of the same operations as NumPy arrays, such as indexing (b), vectorization (c) and reduction (d). <font color='darkorange'>These are implemented solely using NumPy, relying on functions like <em>ufunc.accumulate</em>, <em>ufunc.reduceat</em> and indexing. This means that most operations are close to equivalent operations on NumPy matrices, with a few exceptions like column reductions</font>. An EncodedRaggedArray is a RaggedArray that supports storing and operating on non-numeric data (e.g. DNA sequences) by encoding the data and keeping track of the encoding (e). An EncodedRaggedArray supports the same operations as RaggedArrays (f). This figure is an adopted and modified version of Figure 1 in <span class="citation" data-cites="1LexfAxj">[<a href="#ref-1LexfAxj" role="doc-biblioref">5</a>]</span> and is licensed under a Creative Commons Attribution 4.0 International License (<a href="http://creativecommons.org/licenses/by/4.0/" class="uri">http://creativecommons.org/licenses/by/4.0/</a>).</figcaption>
+<figcaption aria-hidden="true"><span>Figure 2:</span> <strong>Overview of the RaggedArray and EncodedRaggedArray data structures</strong>. A RaggedArray is similar to a NumPy array/matrix but can represent a matrix consisting of rows with varying lengths (a). This makes it able to represent data with varying lengths efficiently in a shared data structure. A RaggedArray supports many of the same operations as NumPy arrays, such as indexing (b), vectorization (c) and reduction (d). <font color='darkorange'>These are implemented solely using NumPy, relying on functions like ufunc.accumulate, ufunc.reduceat and indexing. This means that most operations are close to equivalent operations on NumPy matrices, with a few exceptions like column reductions</font>. An EncodedRaggedArray is a RaggedArray that supports storing and operating on non-numeric data (e.g. DNA sequences) by encoding the data and keeping track of the encoding (e). An EncodedRaggedArray supports the same operations as RaggedArrays (f). This figure is an adopted and modified version of Figure 1 in <span class="citation" data-cites="1LexfAxj">[<a href="#ref-1LexfAxj" role="doc-biblioref">5</a>]</span> and is licensed under a Creative Commons Attribution 4.0 International License (<a href="http://creativecommons.org/licenses/by/4.0/" class="uri">http://creativecommons.org/licenses/by/4.0/</a>).</figcaption>
 </figure>
 </div>
 <p>BioNumPy has been developed following the principles of continuous integration and distribution. The codebase is thoroughly and automatically tested through an extensive collection of unit tests, application tests, integration tests and property-based tests <span class="citation" data-cites="8ghcYs9i">[<a href="#ref-8ghcYs9i" role="doc-biblioref">6</a>]</span>. New code changes are automatically benchmarked and tested before being automatically published, ensuring that updates can be frequent while high code quality is maintained. This workflow makes it safe and easy to allow contributions from new contributors, which is important for longevity and community adoption of the package.</p>
